@@ -34,8 +34,10 @@ public class AllJdbcSteps {
 				System.out.println("Employee Mobile : "+rs.getLong("mobile"));
 				System.out.println("Employee Email : "+rs.getString("email"));
 				System.out.println("Employee Location : "+rs.getString("location"));
-				System.out.println("Employee Password : "+rs.getString("password"));
+				System.out.println("Employee Password : "+rs.getString("password"));	
 			}
+			//Step 6 : Close Connection
+			connection.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
